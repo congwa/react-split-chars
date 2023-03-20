@@ -1,7 +1,7 @@
-import { ExampleComponent } from '.'
+import { SplitChars } from '.'
 
-describe('ExampleComponent', () => {
+describe('SplitChars', () => {
   it('is truthy', () => {
-    expect(ExampleComponent).toBeTruthy()
+    expect(SplitChars).toBeTruthy()
   })
 })

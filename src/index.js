@@ -1,8 +1,8 @@
-import { Fragment, default as React } from 'react'
+import React, { Fragment } from 'react'
 
 export const SplitChars = React.forwardRef(({ children, wrapper }, ref) => {
   if (typeof children !== 'string') {
-    throw new Error('SplitChars only accepts a string as child.');
+    throw new Error('SplitChars only accepts a string as child.')
   }
   return (
     <>
@@ -12,10 +12,10 @@ export const SplitChars = React.forwardRef(({ children, wrapper }, ref) => {
         )
         .map((char, i) => {
           if (char === ' ') {
-            return <React.Fragment key={i}> </React.Fragment>;
+            return <Fragment key={i}> </Fragment>
           }
-          return React.cloneElement(wrapper, { ref, key: i }, char);
+          return React.cloneElement(wrapper, { ref, key: i }, char)
         })}
     </>
-  );
-});
+  )
+})

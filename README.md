@@ -15,14 +15,15 @@ npm install --save react-split-chars
 ```jsx
 import React, { Component } from 'react'
 
-import MyComponent from 'react-split-chars'
-import 'react-split-chars/dist/index.css'
+import { SplitChars } from 'react-split-chars'
 
-class Example extends Component {
-  render() {
-    return <MyComponent />
-  }
+const App = () => {
+  return <SplitChars wrapper={<span></span>}>
+    This component can wrap a string into individual character tags.
+  </SplitChars>
 }
+
+export default App
 ```
 
 ## License
